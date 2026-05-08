@@ -1,5 +1,6 @@
 import React from 'react';
-import { I18N } from '../../data/portfolio';
+import portfolioData from '../../data/portfolio.json';
+const { I18N } = portfolioData;
 import { chipStyle, primaryBtnStyle } from '../../utils/styles';
 import CornerTicks from './CornerTicks';
 import SectionLabel from './SectionLabel';

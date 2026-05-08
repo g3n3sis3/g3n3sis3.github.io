@@ -1,5 +1,6 @@
 import React from 'react';
-import { PORTFOLIO_DATA, I18N } from '../data/portfolio';
+import portfolioData from '../data/portfolio.json';
+const { PORTFOLIO_DATA, I18N } = portfolioData;
 import { primaryBtnStyle, chipStyle } from '../utils/styles';
 import EffectsBackground from './atoms/EffectsBackground';
 import ScrambleText from './atoms/ScrambleText';
