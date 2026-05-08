@@ -3,16 +3,9 @@ import { chipStyle } from '../../utils/styles';
 
 export default function ExperienceRow({ item, lang, accent, last }) {
   return (
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: '180px 24px 1fr',
-        gap: 0,
-        paddingBottom: last ? 0 : 28,
-      }}
-    >
+    <div className="resp-exp-row" style={{ paddingBottom: last ? 0 : 28 }}>
       <div style={{ fontSize: 11, color: accent, letterSpacing: '0.18em', paddingTop: 4 }}>{item.period}</div>
-      <div style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
+      <div className="resp-exp-connector" style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
         <div style={{ width: 1, background: '#1c1f25', flex: 1 }} />
         <div
           style={{

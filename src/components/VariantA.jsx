@@ -18,7 +18,7 @@ import ContactRow from './layout/ContactRow';
 const ACCENT = '#7ab8ff';
 
 function sectionStyle() {
-  return { position: 'relative', maxWidth: 1180, margin: '0 auto', padding: '80px 48px', zIndex: 1 };
+  return { position: 'relative', maxWidth: 1180, margin: '0 auto', zIndex: 1 };
 }
 
 export default function VariantA({ effectsIntensity = 0.5 }) {
@@ -65,25 +65,14 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
           borderBottom: '1px solid #14171c',
         }}
       >
-        <div
-          style={{
-            maxWidth: 1180,
-            margin: '0 auto',
-            padding: '16px 48px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: 32,
-          }}
-        >
+        <div className="resp-header-inner">
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <BlinkingDot color={accent} />
             <span style={{ fontSize: 12, letterSpacing: '0.16em', color: '#f4f5f7', fontWeight: 600 }}>
               MIGUEL.ROBLEDO
             </span>
             <span style={{ fontSize: 11, color: '#5a6168' }}>// {D.identity.handle}</span>
           </div>
-          <nav style={{ display: 'flex', gap: 28, fontSize: 12, color: '#8a929c' }}>
+          <nav className="resp-nav">
             {[
               ['#about', t.nav_about],
               ['#experience', t.nav_experience],
@@ -107,26 +96,13 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
       </header>
 
       {/* HERO */}
-      <section
-        id="about"
-        style={{ position: 'relative', maxWidth: 1180, margin: '0 auto', padding: '120px 48px 100px', zIndex: 1 }}
-      >
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 380px', gap: 80, alignItems: 'start' }}>
+      <section id="about" className="resp-hero-section">
+        <div className="resp-hero-grid">
           <div>
             <div style={{ fontSize: 11, color: accent, letterSpacing: '0.24em', marginBottom: 20 }}>
               [01] // {lang === 'es' ? 'PERFIL' : 'PROFILE'}
             </div>
-            <h1
-              style={{
-                fontSize: 76,
-                lineHeight: 1.0,
-                margin: 0,
-                fontWeight: 600,
-                color: '#f4f5f7',
-                letterSpacing: '-0.03em',
-                textWrap: 'balance',
-              }}
-            >
+            <h1 className="resp-hero-title">
               <ScrambleText text={D.identity.name} duration={700} trigger="mount" />
             </h1>
             <div style={{ fontSize: 18, color: '#8a929c', marginTop: 18, letterSpacing: '0.02em' }}>
@@ -178,10 +154,6 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
             }}
           >
             <CornerTicks color={accent} />
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 18 }}>
-              <BlinkingDot color="#7fdc9b" />
-              <span style={{ fontSize: 11, color: '#7fdc9b', letterSpacing: '0.18em' }}>{t.online.toUpperCase()}</span>
-            </div>
             <KeyVal k={t.role} v={lang === 'es' ? D.identity.role_es : D.identity.role_en} />
             <KeyVal k={t.location} v={lang === 'es' ? D.identity.location_es : D.identity.location_en} />
             <KeyVal k={t.status} v={lang === 'es' ? D.identity.status_es : D.identity.status_en} accent={accent} />
@@ -204,7 +176,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
       <Divider accent={accent} />
 
       {/* EXPERIENCE */}
-      <section id="experience" style={sectionStyle()}>
+      <section id="experience" className="resp-section" style={sectionStyle()}>
         <SectionHeader idx="02" label={t.section_experience} accent={accent} lang={lang} />
         <div style={{ display: 'flex', flexDirection: 'column', gap: 0, marginTop: 40 }}>
           {D.experience.map((e, i) => (
@@ -216,9 +188,9 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
       <Divider accent={accent} />
 
       {/* SKILLS */}
-      <section id="skills" style={sectionStyle()}>
+      <section id="skills" className="resp-section" style={sectionStyle()}>
         <SectionHeader idx="03" label={t.section_skills} accent={accent} lang={lang} />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 24, marginTop: 40 }}>
+        <div className="resp-grid-2" style={{ marginTop: 40 }}>
           {D.skills.map((s) => (
             <div
               key={s.group_es}
@@ -242,7 +214,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
       <Divider accent={accent} />
 
       {/* PROJECTS */}
-      <section id="projects" style={sectionStyle()}>
+      <section id="projects" className="resp-section" style={sectionStyle()}>
         <SectionHeader idx="04" label={t.section_projects} accent={accent} lang={lang} />
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 32, flexWrap: 'wrap' }}>
           <span style={{ fontSize: 11, color: '#5a6168', letterSpacing: '0.18em', textTransform: 'uppercase' }}>
@@ -268,7 +240,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
             </button>
           ))}
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 20, marginTop: 28 }}>
+        <div className="resp-projects-grid" style={{ marginTop: 28 }}>
           {filteredProjects.map((p) => (
             <ProjectCard key={p.id} project={p} lang={lang} accent={accent} onOpen={() => setActiveProject(p)} />
           ))}
@@ -278,9 +250,10 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
       <Divider accent={accent} />
 
       {/* CERTS */}
-      <section id="certs" style={sectionStyle()}>
+      <section id="certs" className="resp-section" style={sectionStyle()}>
         <SectionHeader idx="05" label={t.section_certs} accent={accent} lang={lang} />
-        <div style={{ marginTop: 40, border: '1px solid #1c1f25' }}>
+        <div className="resp-cert-wrap">
+        <div style={{ marginTop: 40, border: '1px solid #1c1f25', minWidth: 580 }}>
           <div
             style={{
               display: 'grid',
@@ -304,25 +277,17 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
             <CertRow key={c.id} cert={c} idx={i} accent={accent} lang={lang} t={t} />
           ))}
         </div>
+        </div>
       </section>
 
       <Divider accent={accent} />
 
       {/* EDUCATION */}
-      <section id="education" style={sectionStyle()}>
+      <section id="education" className="resp-section" style={sectionStyle()}>
         <SectionHeader idx="06" label={t.section_education} accent={accent} lang={lang} />
         <div style={{ marginTop: 40, display: 'flex', flexDirection: 'column', gap: 16 }}>
           {D.education.map((ed, i) => (
-            <div
-              key={i}
-              style={{
-                display: 'grid',
-                gridTemplateColumns: '180px 1fr',
-                gap: 24,
-                padding: '20px 22px',
-                border: '1px solid #1c1f25',
-              }}
-            >
+            <div key={i} className="resp-edu-row">
               <div style={{ fontSize: 11, color: accent, letterSpacing: '0.16em', paddingTop: 4 }}>{ed.period}</div>
               <div>
                 <div style={{ fontSize: 16, color: '#f4f5f7', fontWeight: 500, marginBottom: 4 }}>
@@ -338,7 +303,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
       {D.posts.length > 0 && (
         <>
           <Divider accent={accent} />
-          <section id="blog" style={sectionStyle()}>
+          <section id="blog" className="resp-section" style={sectionStyle()}>
             <SectionHeader idx="07" label={t.section_blog} accent={accent} lang={lang} />
             <div style={{ marginTop: 40, display: 'flex', flexDirection: 'column' }}>
               {D.posts.map((p, i) => (
@@ -376,9 +341,9 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
       <Divider accent={accent} />
 
       {/* CONTACT */}
-      <section id="contact" style={{ ...sectionStyle(), paddingBottom: 60 }}>
+      <section id="contact" className="resp-section" style={{ ...sectionStyle(), paddingBottom: 60 }}>
         <SectionHeader idx="08" label={t.section_contact} accent={accent} lang={lang} />
-        <div style={{ marginTop: 40, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40 }}>
+        <div className="resp-contact-grid" style={{ marginTop: 40 }}>
           <div>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#bfc4cb', maxWidth: 460, textWrap: 'pretty' }}>
               {t.contact_intro}
