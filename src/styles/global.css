@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #06070a;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  color: #cfd3d8;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #7ab8ff;
+  color: #06070a;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08090c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1f25;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2e36;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+a {
+  color: inherit;
+}
