@@ -139,8 +139,8 @@
       },
       {
         "id": "ejpt",
-        "code": "eJPT",
-        "name": "Junior Penetration Tester",
+        "code": "eJPTv2",
+        "name": "eLearnSecurity Junior Penetration Tester v2",
         "issuer": "INE Security",
         "year": "2025",
         "status": "verified"
