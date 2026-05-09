@@ -152,7 +152,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
             <CornerTicks color={accent} />
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20 }}>
               <img
-                src="/avatar.png"
+                src="/avatar2.png"
                 alt="Miguel Robledo"
                 style={{
                   width: 88,
