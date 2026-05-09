@@ -47,7 +47,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
         fontFamily: 'JetBrains Mono, ui-monospace, monospace',
         minHeight: 1600,
         position: 'relative',
-        overflow: 'hidden',
+        overflow: 'clip',
         width: '100%',
       }}
     >
@@ -160,6 +160,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
                   borderRadius: '50%',
                   border: `2px solid ${accent}`,
                   objectFit: 'cover',
+                  objectPosition: '40% 15%',
                   filter: 'grayscale(20%)',
                 }}
               />
