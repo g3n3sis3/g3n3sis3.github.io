@@ -41,7 +41,7 @@
     ],
     "experience": [
       {
-        "period": "2024 — PRESENT",
+        "period": "MAR 2026 — PRESENT",
         "role_es": "Analista N1 — SOC",
         "role_en": "Tier-1 Analyst — SOC",
         "company": "Fujitsu",
@@ -55,17 +55,16 @@
         ]
       },
       {
-        "period": "2023 — 2024",
-        "role_es": "Becario — Soporte de Sistemas",
-        "role_en": "Intern — Systems Support",
-        "company": "Universidad de Sevilla",
+        "period": "2025 · 6M",
+        "role_es": "Becario",
+        "role_en": "Intern",
+        "company": "Inetum",
         "desc_es": "Mantenimiento de infraestructura, hardening de equipos, soporte L1/L2 y automatización de tareas administrativas con scripting.",
         "desc_en": "Infrastructure maintenance, endpoint hardening, L1/L2 support and automation of admin tasks via scripting.",
         "tags": [
           "Linux",
           "Bash",
-          "Active Directory",
-          "Certificados"
+          "Active Directory"
         ]
       }
     ],
@@ -105,8 +104,7 @@
           "ELK",
           "EDR",
           "SIEM",
-          "SOAR",
-          "YARA"
+          "SOAR"
         ]
       },
       {
@@ -125,7 +123,8 @@
         "items": [
           "Linux",
           "Windows",
-          "Docker"
+          "Docker",
+          "Android"
         ]
       }
     ],
