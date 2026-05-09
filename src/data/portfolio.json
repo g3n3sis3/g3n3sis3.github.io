@@ -56,8 +56,8 @@
       },
       {
         "period": "2025",
-        "role_es": "Becario",
-        "role_en": "Intern",
+        "role_es": "Becario — SOC",
+        "role_en": "Intern — SOC",
         "company": "Inetum",
         "desc_es": "Mantenimiento de infraestructura, hardening de equipos, soporte L1/L2 y automatización de tareas administrativas con scripting.",
         "desc_en": "Infrastructure maintenance, endpoint hardening, L1/L2 support and automation of admin tasks via scripting.",
