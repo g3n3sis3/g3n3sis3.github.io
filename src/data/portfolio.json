@@ -175,6 +175,7 @@
         "tags": ["ML", "OpenStack", "Cloud Security"],
         "stack": ["Python", "KNN", "LSTM", "Embeddings", "OpenStack"],
         "github_url": "",
+        "status": "pending",
         "year": "2026"
       },
       {
@@ -197,6 +198,7 @@
           "Scraping"
         ],
         "github_url": "",
+        "status": "pending",
         "year": "2026"
       },
       {
@@ -212,6 +214,7 @@
         "stack": ["WPScan", "Nmap", "Burp Suite", "Metasploit"],
         "image_url": "/projects/tfg-portada.png",
         "github_url": "",
+        "status": "verified",
         "year": "2025"
       },
       {
@@ -226,6 +229,7 @@
         "tags": ["Python", "REST API", "MySQL"],
         "stack": ["Python", "Silence", "MySQL"],
         "github_url": "https://github.com/g3n3sis3/ezDates",
+        "status": "verified",
         "year": "2022"
       }
     ],

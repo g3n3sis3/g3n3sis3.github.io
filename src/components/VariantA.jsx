@@ -268,7 +268,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
         </div>
         <div className="resp-projects-grid" style={{ marginTop: 28 }}>
           {filteredProjects.map((p) => (
-            <ProjectCard key={p.id} project={p} lang={lang} accent={accent} onOpen={() => setActiveProject(p)} />
+            <ProjectCard key={p.id} project={p} lang={lang} accent={accent} onOpen={() => setActiveProject(p)} t={t} />
           ))}
         </div>
       </section>
