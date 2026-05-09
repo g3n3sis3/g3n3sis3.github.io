@@ -126,13 +126,15 @@ export default function ProjectModal({ project, lang, onClose, accent }) {
         </div>
 
         <div style={{ borderTop: '1px solid #1c1f25', paddingTop: 20, display: 'flex', gap: 12 }}>
-          <a
-            href="#"
-            onClick={(e) => e.preventDefault()}
-            style={primaryBtnStyle(accent)}
-          >
-            github.com/g3n3sis3/{project.id}  →
-          </a>
+          {project.github_url ? (
+            <a href={project.github_url} target="_blank" rel="noopener noreferrer" style={primaryBtnStyle(accent)}>
+              github.com/g3n3sis3/{project.id}  →
+            </a>
+          ) : (
+            <span style={{ ...primaryBtnStyle(accent), opacity: 0.4, cursor: 'default', pointerEvents: 'none' }}>
+              {lang === 'es' ? 'PRÓXIMAMENTE EN GITHUB' : 'COMING SOON ON GITHUB'}  —
+            </span>
+          )}
         </div>
       </div>
     </div>
