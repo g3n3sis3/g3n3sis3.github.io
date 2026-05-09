@@ -31,7 +31,7 @@
       {
         "label_es": "Proyectos",
         "label_en": "Projects",
-        "value": "02"
+        "value": "04"
       },
       {
         "label_es": "CTFs",
@@ -163,6 +163,20 @@
       }
     ],
     "projects": [
+      {
+        "id": "tfm-openstack-anomaly",
+        "code": "P-04",
+        "name_es": "TFM — Detección de Amenazas en OpenStack con ML",
+        "name_en": "Master's Thesis — Threat Detection in OpenStack with ML",
+        "summary_es": "Sistema de detección de anomalías en logs y métricas de cloud privada OpenStack mediante aprendizaje automático no supervisado.",
+        "summary_en": "Anomaly detection system for logs and metrics in private OpenStack cloud using unsupervised machine learning.",
+        "desc_es": "Trabajo Fin de Máster en Seguridad de la Información y las Comunicaciones. Diseño e implementación de un sistema de detección de amenazas avanzadas en entornos OpenStack, combinando algoritmos KNN, LSTM y técnicas de embeddings con RAG para análisis de logs y métricas en tiempo real. En desarrollo.",
+        "desc_en": "Master's Final Project in Information and Communications Security. Design and implementation of an advanced threat detection system for OpenStack environments, combining KNN, LSTM and RAG-based embedding techniques for real-time log and metric analysis. In development.",
+        "tags": ["ML", "OpenStack", "Cloud Security"],
+        "stack": ["Python", "KNN", "LSTM", "Embeddings", "OpenStack"],
+        "github_url": "",
+        "year": "2026"
+      },
       {
         "id": "osint-scraper",
         "code": "P-01",
