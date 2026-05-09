@@ -31,7 +31,7 @@
       {
         "label_es": "Proyectos",
         "label_en": "Projects",
-        "value": "01"
+        "value": "02"
       },
       {
         "label_es": "CTFs",
@@ -184,6 +184,20 @@
         ],
         "github_url": "",
         "year": "2026"
+      },
+      {
+        "id": "tfg-wordpress-audit",
+        "code": "P-02",
+        "name_es": "Auditoría de Hosting WordPress/WooCommerce",
+        "name_en": "WordPress/WooCommerce Hosting Audit",
+        "summary_es": "Auditoría de ciberseguridad a servidores y webs WordPress/WooCommerce para identificar vulnerabilidades y establecer una base de hardening efectiva.",
+        "summary_en": "Cybersecurity audit of WordPress/WooCommerce hosting servers to identify vulnerabilities and establish an effective hardening baseline.",
+        "desc_es": "Trabajo Fin de Grado en Ingeniería Informática. Auditoría de ciberseguridad a varios servidores y webs WordPress con WooCommerce, analizando vulnerabilidades comunes en entornos de comercio electrónico y proponiendo medidas de seguridad robustas.",
+        "desc_en": "Final Degree Project in Computer Engineering. Cybersecurity audit of WordPress/WooCommerce hosting environments, analyzing common vulnerabilities in e-commerce deployments and proposing robust security hardening measures.",
+        "tags": ["WordPress", "Red Team", "Web"],
+        "stack": ["WPScan", "Nmap", "Burp Suite", "Metasploit"],
+        "github_url": "",
+        "year": "2025"
       }
     ],
     "posts": []
