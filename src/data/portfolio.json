@@ -198,6 +198,20 @@
         "stack": ["WPScan", "Nmap", "Burp Suite", "Metasploit"],
         "github_url": "",
         "year": "2025"
+      },
+      {
+        "id": "ezdates",
+        "code": "P-03",
+        "name_es": "ezDates — App de citas",
+        "name_en": "ezDates — Dating App",
+        "summary_es": "API REST de una aplicación de citas desarrollada en Python con MySQL. Proyecto universitario de la asignatura IISSI en la Universidad de Sevilla.",
+        "summary_en": "REST API for a dating application built with Python and MySQL. University project for the Software Engineering subject at Universidad de Sevilla.",
+        "desc_es": "Backend completo de una app de citas con sistema de perfiles, galería de fotos, solicitudes de conexión entre usuarios y gestión de citas. Desarrollado con el framework Silence sobre Python y MySQL.",
+        "desc_en": "Full backend for a dating app featuring user profiles, photo galleries, connection requests between users and date scheduling. Built with the Silence REST framework on Python and MySQL.",
+        "tags": ["Python", "REST API", "MySQL"],
+        "stack": ["Python", "Silence", "MySQL"],
+        "github_url": "https://github.com/g3n3sis3/ezDates",
+        "year": "2022"
       }
     ],
     "posts": []
