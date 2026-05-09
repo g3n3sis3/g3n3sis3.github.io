@@ -19,7 +19,7 @@ export default function ExperienceRow({ item, lang, accent, last }) {
           }}
         />
       </div>
-      <div style={{ paddingBottom: 10 }}>
+      <div style={{ paddingBottom: 10, paddingLeft: 16 }}>
         <div style={{ fontSize: 17, color: '#f4f5f7', fontWeight: 500 }}>
           {lang === 'es' ? item.role_es : item.role_en}{' '}
           <span style={{ color: '#8a929c', fontWeight: 400 }}>· {item.company}</span>
