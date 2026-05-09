@@ -160,7 +160,6 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
                   borderRadius: '50%',
                   border: `2px solid ${accent}`,
                   objectFit: 'cover',
-                  objectPosition: '40% 15%',
                   filter: 'grayscale(20%)',
                 }}
               />
