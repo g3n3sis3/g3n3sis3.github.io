@@ -83,17 +83,28 @@ export default function ProjectModal({ project, lang, onClose, accent }) {
           style={{
             height: 220,
             border: '1px solid #2a2e36',
-            background: 'repeating-linear-gradient(135deg, #14171c, #14171c 12px, #0f1115 12px, #0f1115 24px)',
+            background: project.image_url
+              ? '#0a0c10'
+              : 'repeating-linear-gradient(135deg, #14171c, #14171c 12px, #0f1115 12px, #0f1115 24px)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             marginBottom: 24,
             position: 'relative',
+            overflow: 'hidden',
           }}
         >
-          <div style={{ fontSize: 11, color: '#5a6168', letterSpacing: '0.18em' }}>
-            [ SCREENSHOT · {project.code} ]
-          </div>
+          {project.image_url ? (
+            <img
+              src={project.image_url}
+              alt={project.code}
+              style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'contain' }}
+            />
+          ) : (
+            <div style={{ fontSize: 11, color: '#5a6168', letterSpacing: '0.18em' }}>
+              [ SCREENSHOT · {project.code} ]
+            </div>
+          )}
         </div>
 
         <div style={{ marginBottom: 28 }}>

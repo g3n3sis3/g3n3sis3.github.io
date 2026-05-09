@@ -179,7 +179,7 @@
       },
       {
         "id": "osint-scraper",
-        "code": "P-01",
+        "code": "P-03",
         "name_es": "OSINT Scraper — Información expuesta",
         "name_en": "OSINT Scraper — Exposed information",
         "summary_es": "Herramienta de OSINT scraping para detectar información expuesta de personas y organizaciones en la web.",
@@ -202,20 +202,21 @@
       {
         "id": "tfg-wordpress-audit",
         "code": "P-02",
-        "name_es": "Auditoría de Hosting WordPress/WooCommerce",
-        "name_en": "WordPress/WooCommerce Hosting Audit",
+        "name_es": "TFG — Auditoría de Hosting WordPress/WooCommerce",
+        "name_en": "TFG — WordPress/WooCommerce Hosting Audit",
         "summary_es": "Auditoría de ciberseguridad a servidores y webs WordPress/WooCommerce para identificar vulnerabilidades y establecer una base de hardening efectiva.",
         "summary_en": "Cybersecurity audit of WordPress/WooCommerce hosting servers to identify vulnerabilities and establish an effective hardening baseline.",
         "desc_es": "Trabajo Fin de Grado en Ingeniería Informática. Auditoría de ciberseguridad a varios servidores y webs WordPress con WooCommerce, analizando vulnerabilidades comunes en entornos de comercio electrónico y proponiendo medidas de seguridad robustas.",
         "desc_en": "Final Degree Project in Computer Engineering. Cybersecurity audit of WordPress/WooCommerce hosting environments, analyzing common vulnerabilities in e-commerce deployments and proposing robust security hardening measures.",
         "tags": ["WordPress", "Red Team", "Web"],
         "stack": ["WPScan", "Nmap", "Burp Suite", "Metasploit"],
+        "image_url": "/projects/tfg-portada.png",
         "github_url": "",
         "year": "2025"
       },
       {
         "id": "ezdates",
-        "code": "P-03",
+        "code": "P-01",
         "name_es": "ezDates — App de citas",
         "name_en": "ezDates — Dating App",
         "summary_es": "API REST de una aplicación de citas desarrollada en Python con MySQL. Proyecto universitario de la asignatura IISSI en la Universidad de Sevilla.",
