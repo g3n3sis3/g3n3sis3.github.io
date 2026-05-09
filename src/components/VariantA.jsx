@@ -95,8 +95,8 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
       <section id="about" className="resp-hero-section">
         <div className="resp-hero-grid">
           <div>
-            <div style={{ fontSize: 11, color: accent, letterSpacing: '0.24em', marginBottom: 20 }}>
-              [01] // {lang === 'es' ? 'PERFIL' : 'PROFILE'}
+            <div style={{ marginBottom: 20 }}>
+              <SectionHeader idx="01" label={lang === 'es' ? 'Perfil' : 'Profile'} accent={accent} lang={lang} />
             </div>
             <h1 className="resp-hero-title">
               <ScrambleText text={D.identity.name} duration={700} trigger="mount" />
