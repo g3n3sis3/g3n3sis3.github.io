@@ -150,6 +150,20 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
             }}
           >
             <CornerTicks color={accent} />
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20 }}>
+              <img
+                src="/avatar.png"
+                alt="Miguel Robledo"
+                style={{
+                  width: 88,
+                  height: 88,
+                  borderRadius: '50%',
+                  border: `2px solid ${accent}`,
+                  objectFit: 'cover',
+                  filter: 'grayscale(20%)',
+                }}
+              />
+            </div>
             <KeyVal k={t.role} v={lang === 'es' ? D.identity.role_es : D.identity.role_en} />
             <KeyVal k={t.location} v={lang === 'es' ? D.identity.location_es : D.identity.location_en} />
             <KeyVal k={t.status} v={lang === 'es' ? D.identity.status_es : D.identity.status_en} accent={accent} />
