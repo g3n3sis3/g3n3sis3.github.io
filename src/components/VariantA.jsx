@@ -103,7 +103,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
             </h1>
             <div style={{ fontSize: 18, color: '#8a929c', marginTop: 18, letterSpacing: '0.02em' }}>
               {lang === 'es' ? D.identity.role_es : D.identity.role_en} ·{' '}
-              <span style={{ color: accent }}>aka {D.identity.handle}</span>
+              <span style={{ color: accent }}>a.k.a. {D.identity.handle}</span>
             </div>
             <p
               style={{
@@ -123,7 +123,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
               </a>
               <a
                 href="/cv.pdf"
-                download="CV_MiguelRobledoFernandez.pdf"
+                download="CV_ES_MiguelRobledoFernandez.pdf"
                 style={{
                   fontFamily: 'inherit',
                   fontSize: 12,
@@ -135,7 +135,23 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
                   textTransform: 'uppercase',
                 }}
               >
-                ↓ {t.download_cv}
+                ↓ CV {lang === 'es' ? 'Español' : 'Spanish'}
+              </a>
+              <a
+                href="/cv_en.pdf"
+                download="CV_EN_MiguelRobledoFernandez.pdf"
+                style={{
+                  fontFamily: 'inherit',
+                  fontSize: 12,
+                  letterSpacing: '0.14em',
+                  color: '#cfd3d8',
+                  border: '1px solid #2a2e36',
+                  padding: '10px 16px',
+                  textDecoration: 'none',
+                  textTransform: 'uppercase',
+                }}
+              >
+                ↓ CV {lang === 'es' ? 'Inglés' : 'English'}
               </a>
             </div>
           </div>

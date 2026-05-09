@@ -36,7 +36,7 @@
       {
         "label_es": "CTFs",
         "label_en": "CTFs",
-        "value": "02"
+        "value": "+30"
       }
     ],
     "experience": [
@@ -227,7 +227,7 @@
       "read_post": "Leer",
       "minutes": "min",
       "contact_intro": "Abierto a oportunidades en Red Team, threat hunting y análisis de seguridad. Perfil junior con experiencia real en SOC.",
-      "send_message": "Enviar mensaje",
+      "send_message": "Contáctame",
       "encrypted": "Comunicación cifrada"
     },
     "en": {
@@ -268,7 +268,7 @@
       "read_post": "Read",
       "minutes": "min",
       "contact_intro": "Open to opportunities in Red Team, threat hunting and security analysis. Junior profile with real-world SOC experience.",
-      "send_message": "Send message",
+      "send_message": "Contact me",
       "encrypted": "Encrypted channel"
     }
   }
