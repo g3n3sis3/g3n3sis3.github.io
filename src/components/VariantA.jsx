@@ -66,12 +66,6 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
         }}
       >
         <div className="resp-header-inner">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <span style={{ fontSize: 12, letterSpacing: '0.16em', color: '#f4f5f7', fontWeight: 600 }}>
-              MIGUEL.ROBLEDO
-            </span>
-            <span style={{ fontSize: 11, color: '#5a6168' }}>// {D.identity.handle}</span>
-          </div>
           <nav className="resp-nav">
             {[
               ['#about', t.nav_about],
@@ -303,44 +297,6 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
       </section>
 
       <Divider accent={accent} />
-      <section id="blog" className="resp-section" style={sectionStyle()}>
-        <SectionHeader idx="07" label={t.section_blog} accent={accent} lang={lang} />
-        <div style={{ marginTop: 40, display: 'flex', flexDirection: 'column' }}>
-          {D.posts.length === 0 ? (
-            <div style={{ padding: '28px 0', fontSize: 12, color: '#5a6168', letterSpacing: '0.18em' }}>
-              // {lang === 'es' ? 'PRÓXIMAMENTE' : 'COMING SOON'}
-            </div>
-          ) : D.posts.map((p, i) => (
-            <a
-              href="#"
-              key={i}
-              onClick={(e) => e.preventDefault()}
-              onMouseEnter={(e) => (e.currentTarget.style.background = '#0c0e12')}
-              onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
-              style={{
-                display: 'grid',
-                gridTemplateColumns: '100px 1fr 80px 60px',
-                alignItems: 'center',
-                padding: '18px 20px',
-                borderTop: i === 0 ? '1px solid #1c1f25' : 'none',
-                borderBottom: '1px solid #1c1f25',
-                color: '#cfd3d8',
-                textDecoration: 'none',
-                transition: 'background 120ms',
-              }}
-            >
-              <div style={{ fontSize: 11, color: accent, letterSpacing: '0.14em' }}>{p.date}</div>
-              <div style={{ fontSize: 15, color: '#f4f5f7' }}>
-                <ScrambleText text={lang === 'es' ? p.title_es : p.title_en} duration={400} />
-              </div>
-              <div style={{ fontSize: 11, color: '#5a6168', letterSpacing: '0.06em' }}>{p.read}</div>
-              <div style={{ fontSize: 11, color: accent, textAlign: 'right', letterSpacing: '0.16em' }}>→</div>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <Divider accent={accent} />
 
       {/* CONTACT */}
       <section id="contact" className="resp-section" style={{ ...sectionStyle(), paddingBottom: 60 }}>
@@ -374,7 +330,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
             textTransform: 'uppercase',
           }}
         >
-          <span>© 2026 · MIGUEL ROBLEDO · {D.identity.handle}</span>
+          <span>MIGUEL ROBLEDO · {D.identity.handle}</span>
           <span>v1.0.0 — last build 2026.05</span>
         </div>
       </section>
