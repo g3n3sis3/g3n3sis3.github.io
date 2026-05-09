@@ -7,7 +7,6 @@ import ScrambleText from './atoms/ScrambleText';
 import LangToggle from './atoms/LangToggle';
 import CornerTicks from './atoms/CornerTicks';
 import ProjectModal from './atoms/ProjectModal';
-import BlinkingDot from './layout/BlinkingDot';
 import Divider from './layout/Divider';
 import SectionHeader from './layout/SectionHeader';
 import KeyVal from './layout/KeyVal';
@@ -77,8 +76,10 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
             {[
               ['#about', t.nav_about],
               ['#experience', t.nav_experience],
+              ['#skills', t.nav_skills],
               ['#projects', t.nav_projects],
               ['#certs', t.nav_certs],
+              ['#education', t.nav_education],
               ['#contact', t.nav_contact],
             ].map(([href, label]) => (
               <a
@@ -301,43 +302,43 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
         </div>
       </section>
 
-      {D.posts.length > 0 && (
-        <>
-          <Divider accent={accent} />
-          <section id="blog" className="resp-section" style={sectionStyle()}>
-            <SectionHeader idx="07" label={t.section_blog} accent={accent} lang={lang} />
-            <div style={{ marginTop: 40, display: 'flex', flexDirection: 'column' }}>
-              {D.posts.map((p, i) => (
-                <a
-                  href="#"
-                  key={i}
-                  onClick={(e) => e.preventDefault()}
-                  onMouseEnter={(e) => (e.currentTarget.style.background = '#0c0e12')}
-                  onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
-                  style={{
-                    display: 'grid',
-                    gridTemplateColumns: '100px 1fr 80px 60px',
-                    alignItems: 'center',
-                    padding: '18px 20px',
-                    borderTop: i === 0 ? '1px solid #1c1f25' : 'none',
-                    borderBottom: '1px solid #1c1f25',
-                    color: '#cfd3d8',
-                    textDecoration: 'none',
-                    transition: 'background 120ms',
-                  }}
-                >
-                  <div style={{ fontSize: 11, color: accent, letterSpacing: '0.14em' }}>{p.date}</div>
-                  <div style={{ fontSize: 15, color: '#f4f5f7' }}>
-                    <ScrambleText text={lang === 'es' ? p.title_es : p.title_en} duration={400} />
-                  </div>
-                  <div style={{ fontSize: 11, color: '#5a6168', letterSpacing: '0.06em' }}>{p.read}</div>
-                  <div style={{ fontSize: 11, color: accent, textAlign: 'right', letterSpacing: '0.16em' }}>→</div>
-                </a>
-              ))}
+      <Divider accent={accent} />
+      <section id="blog" className="resp-section" style={sectionStyle()}>
+        <SectionHeader idx="07" label={t.section_blog} accent={accent} lang={lang} />
+        <div style={{ marginTop: 40, display: 'flex', flexDirection: 'column' }}>
+          {D.posts.length === 0 ? (
+            <div style={{ padding: '28px 0', fontSize: 12, color: '#5a6168', letterSpacing: '0.18em' }}>
+              // {lang === 'es' ? 'PRÓXIMAMENTE' : 'COMING SOON'}
             </div>
-          </section>
-        </>
-      )}
+          ) : D.posts.map((p, i) => (
+            <a
+              href="#"
+              key={i}
+              onClick={(e) => e.preventDefault()}
+              onMouseEnter={(e) => (e.currentTarget.style.background = '#0c0e12')}
+              onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '100px 1fr 80px 60px',
+                alignItems: 'center',
+                padding: '18px 20px',
+                borderTop: i === 0 ? '1px solid #1c1f25' : 'none',
+                borderBottom: '1px solid #1c1f25',
+                color: '#cfd3d8',
+                textDecoration: 'none',
+                transition: 'background 120ms',
+              }}
+            >
+              <div style={{ fontSize: 11, color: accent, letterSpacing: '0.14em' }}>{p.date}</div>
+              <div style={{ fontSize: 15, color: '#f4f5f7' }}>
+                <ScrambleText text={lang === 'es' ? p.title_es : p.title_en} duration={400} />
+              </div>
+              <div style={{ fontSize: 11, color: '#5a6168', letterSpacing: '0.06em' }}>{p.read}</div>
+              <div style={{ fontSize: 11, color: accent, textAlign: 'right', letterSpacing: '0.16em' }}>→</div>
+            </a>
+          ))}
+        </div>
+      </section>
 
       <Divider accent={accent} />
 
@@ -350,7 +351,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
               {t.contact_intro}
             </p>
             <div style={{ marginTop: 24, fontSize: 11, color: '#5a6168', letterSpacing: '0.18em' }}>
-              <BlinkingDot color={accent} /> {t.encrypted.toUpperCase()}
+              {t.encrypted.toUpperCase()}
             </div>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -373,8 +374,8 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
             textTransform: 'uppercase',
           }}
         >
-          <span>© 2025 · MIGUEL ROBLEDO · {D.identity.handle}</span>
-          <span>v1.0.0 — last build 2025.05</span>
+          <span>© 2026 · MIGUEL ROBLEDO · {D.identity.handle}</span>
+          <span>v1.0.0 — last build 2026.05</span>
         </div>
       </section>
 

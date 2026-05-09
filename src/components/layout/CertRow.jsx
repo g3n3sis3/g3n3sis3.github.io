@@ -32,6 +32,7 @@ export default function CertRow({ cert, idx, accent, lang, t }) {
           letterSpacing: '0.16em',
           color: cert.status === 'verified' ? '#7fdc9b' : '#e0a85b',
           textTransform: 'uppercase',
+          whiteSpace: 'nowrap',
         }}
       >
         {cert.status === 'verified' ? `[ ${t.verified} ]` : `[ ${t.pending} ]`}
