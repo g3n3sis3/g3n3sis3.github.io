@@ -103,25 +103,12 @@ export default function ProjectModal({ project, lang, onClose, accent }) {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 28 }}>
-          <div>
-            <SectionLabel accent={accent}>{t.stack}</SectionLabel>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 6 }}>
-              {project.stack.map((s) => (
-                <li key={s} style={{ fontSize: 13, color: '#cfd3d8' }}>
-                  <span style={{ color: accent, marginRight: 8 }}>›</span>
-                  {s}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <SectionLabel accent={accent}>tags</SectionLabel>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-              {project.tags.map((tag) => (
-                <span key={tag} style={chipStyle()}>{tag}</span>
-              ))}
-            </div>
+        <div style={{ marginBottom: 28 }}>
+          <SectionLabel accent={accent}>{t.stack}</SectionLabel>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 10 }}>
+            {[...new Set([...project.stack, ...project.tags])].map((item) => (
+              <span key={item} style={chipStyle()}>{item}</span>
+            ))}
           </div>
         </div>
 
