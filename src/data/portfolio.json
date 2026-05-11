@@ -11,7 +11,7 @@
       "status_en": "Working at Fujitsu",
       "email": "miguelrxbledo@gmail.com",
       "linkedin": "linkedin.com/in/miguel-robledo-fernández",
-      "linkedin_url": "https://www.linkedin.com/in/miguel-robledo-fernández",
+      "linkedin_url": "https://www.linkedin.com/in/miguel-robledo-fern%C3%A1ndez",
       "github": "g3n3sis3",
       "github_url": "https://github.com/g3n3sis3"
     },
@@ -167,7 +167,7 @@
         "id": "tfm-openstack-anomaly",
         "code": "P-04",
         "name_es": "TFM — Detección de Amenazas en OpenStack con ML",
-        "name_en": "Master's Thesis — Threat Detection in OpenStack with ML",
+        "name_en": "Master's Final Project — Threat Detection in OpenStack with ML",
         "summary_es": "Sistema de detección de anomalías en logs y métricas de cloud privada OpenStack mediante aprendizaje automático no supervisado.",
         "summary_en": "Anomaly detection system for logs and metrics in private OpenStack cloud using unsupervised machine learning.",
         "desc_es": "Trabajo Fin de Máster en Seguridad de la Información y las Comunicaciones. Diseño e implementación de un sistema de detección de amenazas avanzadas en entornos OpenStack, combinando algoritmos KNN, LSTM y técnicas de embeddings con RAG para análisis de logs y métricas en tiempo real. En desarrollo.",

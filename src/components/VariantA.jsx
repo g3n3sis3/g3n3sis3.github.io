@@ -26,6 +26,10 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
   const [projectFilter, setProjectFilter] = React.useState('all');
   const [activeProject, setActiveProject] = React.useState(null);
 
+  React.useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   const D = PORTFOLIO_DATA;
   const t = I18N[lang];
   const accent = ACCENT;
@@ -45,7 +49,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
         background: '#06070a',
         color: '#cfd3d8',
         fontFamily: 'JetBrains Mono, ui-monospace, monospace',
-        minHeight: 1600,
+        minHeight: '100vh',
         position: 'relative',
         overflow: 'clip',
         width: '100%',
@@ -330,7 +334,7 @@ export default function VariantA({ effectsIntensity = 0.5 }) {
 
       {/* CONTACT */}
       <section id="contact" className="resp-section" style={{ ...sectionStyle(), paddingBottom: 60 }}>
-        <SectionHeader idx="08" label={t.section_contact} accent={accent} lang={lang} />
+        <SectionHeader idx="07" label={t.section_contact} accent={accent} lang={lang} />
         <div className="resp-contact-grid" style={{ marginTop: 40 }}>
           <div>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#bfc4cb', maxWidth: 460, textWrap: 'pretty' }}>
