@@ -31,7 +31,7 @@
       {
         "label_es": "Proyectos",
         "label_en": "Projects",
-        "value": "04"
+        "value": "05"
       },
       {
         "label_es": "CTFs",
@@ -165,7 +165,7 @@
     "projects": [
       {
         "id": "tfm-openstack-anomaly",
-        "code": "P-04",
+        "code": "P-05",
         "name_es": "TFM — Detección de Amenazas en OpenStack con ML",
         "name_en": "Master's Final Project — Threat Detection in OpenStack with ML",
         "summary_es": "Sistema de detección de anomalías en logs y métricas de cloud privada OpenStack mediante aprendizaje automático no supervisado.",
@@ -180,7 +180,7 @@
       },
       {
         "id": "osint-scraper",
-        "code": "P-03",
+        "code": "P-04",
         "name_es": "OSINT Scraper — Información expuesta",
         "name_en": "OSINT Scraper — Exposed information",
         "summary_es": "Herramienta de OSINT scraping para detectar información expuesta de personas y organizaciones en la web.",
@@ -199,6 +199,21 @@
         ],
         "github_url": "",
         "status": "pending",
+        "year": "2026"
+      },
+      {
+        "id": "moneyboard",
+        "code": "P-03",
+        "name_es": "MoneyBoard — Dashboard Financiero Personal",
+        "name_en": "MoneyBoard — Personal Finance Dashboard",
+        "summary_es": "Dashboard financiero personal con gestión de cuentas, transacciones, presupuestos y cartera de inversión. Importación de extractos bancarios por PDF.",
+        "summary_en": "Personal finance dashboard with account management, transactions, budgeting, and investment portfolio tracking. Bank statement import via PDF.",
+        "desc_es": "Aplicación web full-stack para gestión financiera personal. Incluye dashboard con estadísticas y gráficos, gestión de cuentas y transacciones, presupuestos por categorías, seguimiento de cartera de inversión con calculadora de interés compuesto, e importación automática de extractos bancarios desde PDF mediante OCR. Instalable como PWA.",
+        "desc_en": "Full-stack web application for personal finance management. Features a dashboard with stats and charts, account and transaction management, category-based budgeting, investment portfolio tracking with a compound interest calculator, and automatic bank statement import from PDF via OCR. Installable as a PWA.",
+        "tags": ["Finance", "Next.js", "PWA"],
+        "stack": ["Next.js 16", "React 19", "TypeScript", "Prisma", "PostgreSQL"],
+        "github_url": "https://github.com/g3n3sis3/MoneyBoard",
+        "status": "verified",
         "year": "2026"
       },
       {
